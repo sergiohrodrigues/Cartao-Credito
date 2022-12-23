@@ -1,0 +1,96 @@
+@import url(./variaveis.css);
+
+#form{
+    text-align: left;
+    width: 87%;
+    max-width: 400px;
+    margin: 80px auto 0px auto;
+}
+
+.form__label{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-roxo);
+    margin-top: 15px;
+}
+
+input{
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.input::placeholder{
+    font-size: 15px;
+    color: gray;
+}
+
+
+.form__finally{
+    display: flex;
+}
+
+.form__finally-date{
+    display: flex;
+}
+
+.input-date{
+    padding: 10px;
+    max-width: 50%;
+    text-align: center;
+}
+
+.input-cod{
+    max-width: 100%;
+    text-align: left;
+}
+
+.input-button{
+    display: block;
+    background: var(--color-roxo);
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+}
+
+.span-required{
+    display: none;
+    font-size: 12px;
+    color: red;
+}
+
+@media screen and (min-width: 1270px){
+    #form{
+        width: 30%;
+        max-width: 900px;
+        margin: 170px 174px 0 auto;
+    }
+    input{
+        padding: 15px;
+    }
+    .input-date{
+        padding: 15px;
+    }
+    .input-cod:hover{
+        cursor: pointer;
+        border: 1px solid purple;
+    }
+    .input-name-number:hover{
+        cursor: pointer;
+        border: 1px solid purple;
+    }
+    .input-button{
+        cursor: pointer;
+    }
+    .input-button:hover{
+        background: white;
+        color: var(--color-roxo);
+        border: 2px solid var(--color-roxo);
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="all">
+        <header class="header">
+            <img src="./assets/img/fundo.png" alt="background" class="header__imagem">
+                <div class="cards__front">
+                    <div class="cards__front-circle">
+                        <div class="cards__front-circle-larger"></div>
+                        <div class="cards__front-circle-small"></div>
+                    </div>
+                    <p class="cards__front-number">0000 0000 0000 0000</p>
+                    <div class="cards__front-nome-data">
+                        <p id="nome-cartao">JANE APPLESEED</p>
+                        <span id="vality">00/00</span>
+                    </div>
+                </div>
+                <div class="cards__verso">
+                    <div class="cards__verso-black"></div>
+                    <div class="cards__verso-gray">
+                        <p id="cod-cartao">000</p>
+                    </div>
+                    <img src="./assets/img/verso-cartao.png" alt="detalhes cartão" class="cards__verso-detalhes">
+                </div>
+        </header>
+
+        <form id="form">
+
+            <label for="name" class="form__label">cardholder name</label>
+            <input type="text" placeholder="e.g. Jane Appleseed" id="name" class="required">
+            <span class="span-required">Wrong format, only letters</span>
+            
+            <label for="number" class="form__label">card number</label>
+            <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="number" class="required" maxlength="16">
+            <span class="span-required">Wrong format, numbers only</span>
+
+            <div class="form__finally">
+                <div>
+                    <label for="" class="form__label">exp. date (mm/yy)</label>
+                    <div class="form__finally-date">
+                        <div>
+                            <input type="text" placeholder="MM" class="input-date required" maxlength="2" id="mm">
+                            <span class="span-required mm-yy">Can't blank</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="YY" class="input-date required" maxlength="2" id="yy">
+                            <span class="span-required mm-yy">Can't blank</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="" class="form__label">cvc</label><br>
+                    <input type="text" placeholder="123" class="input-cod required" id="cod" maxlength="3">
+                    <span class="span-required">Can't blank</span>
+                </div>
+
+            </div>
+                <button class="input-button">Confirm</button>
+        </form>
+
+        <main class="form-sucess">
+            <img src="./assets/img/sucess.png" alt="Visto, Ok, Sucess">
+            <h2 class="form-sucess-titulo">THANK YOU</h2>
+            <h3 class="form-sucess-parag">We've added your card details</h3>
+            <button class="input-continue">Continue</button>
+        </main>
+    </section>
+
+    <script src="./assets/script/validandoForm.js" type="module"></script>
+    <script src="./assets/script/modificandoTextos.js"></script>
+    <script src="./assets/script/eventClick.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@import url(./variaveis.css);
+@import url(./cabecalho.css);
+@import url(./form.css);
+@import url(./form-sucess.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: var(--font);
+    height: 100vh;
+}

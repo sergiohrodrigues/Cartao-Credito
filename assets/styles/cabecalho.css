@@ -1,0 +1,146 @@
+@import url(./variaveis.css);
+
+.all{
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    position: relative;
+}
+
+.header__imagem{
+    width: 110%;
+    height: 200px;
+}
+
+.cards__front{
+    background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 125px;
+    right: 57px;
+    z-index: 2;
+}
+
+.cards__front-circle{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.cards__front-circle-larger{
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.cards__front-circle-small{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+.cards__front-number{
+    font-family: var(--font);
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    background: transparent;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+.cards__front-nome-data{
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.cards__verso{
+    background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    top: 31px;
+    right: 17px;
+}
+
+.cards__verso-black{
+    margin-top: 15px;
+    background: #2F2F2F;
+    width: 100%;
+    height: 30px;
+}
+
+.cards__verso-gray{
+    background: #ADB5BE;
+    border-radius: 5px;
+    width: 80%;
+    height: 27px;
+    margin: 20px auto 10px auto;
+    text-align: right;
+    padding: 6px 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.cards__verso-detalhes{
+    width: 40%;
+    margin: 0px 0px 12px 75px;
+}
+
+@media screen and (min-width: 1270px){
+    .all{
+        flex-direction: row;
+    }
+    .header__imagem{
+        height: 100vh;
+        width: 500px;
+    }
+    .cards__front{
+        width: 100%;
+        max-width: 400px;
+        height: 220px;
+        top: 115px;
+        left: 16%;
+    }
+    .cards__front-number{
+        font-size: 25px;
+        margin-top: 60px;
+    }
+    .cards__front-nome-data{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .cards__verso{
+        width: 100%;
+        max-width: 440px;
+        height: 220px;
+        top: 384px;
+        left: 19%;
+    }
+    .cards__verso-black{
+        height: 50px;
+        margin-top: 20px;
+    }
+    .cards__verso-gray{
+        height: 35px;
+        font-size: 15px;
+        padding: 6px 17px;
+    }
+    .cards__verso-detalhes{
+        margin: 5px 130px;
+    }
+}

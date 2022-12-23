@@ -1,0 +1,46 @@
+@import url(./variaveis.css);
+
+.form-sucess{
+    display: none;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.form-sucess-titulo{
+    font-size: 28px;
+    color: var(--color-roxo);
+    letter-spacing: 3.42px;
+    margin: 20px 0;
+}
+
+.form-sucess-parag{
+    font-size: 18px;
+    color: #8F8694;
+}
+
+.input-continue{
+    display: block;
+    background: var(--color-roxo);
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    max-width: 400px;
+    margin: 30px auto 0 auto;
+}
+
+@media screen and (min-width: 1270px){
+    .form-sucess{
+        width: 30%;
+        max-width: 900px;
+        margin: 195px 174px 0 auto;
+    }
+    .input-continue{
+        margin: 45px auto 0 auto;
+        cursor: pointer;
+    }
+    .input-continue:hover{
+        background: white;
+        color: var(--color-roxo);
+        border: 2px solid var(--color-roxo);
+    }
+}
