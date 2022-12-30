@@ -1,18 +1,18 @@
 const spans = document.querySelectorAll('.span-required');
 const inpts = document.querySelectorAll('.required')
 
-function setError (index){
-    inpts[index].style.border = '2px solid #e63636'
+export const setError = (index) => {
+    inpts[index].style.border = '3px solid #e63636'
     spans[index].style.display = 'block'
 }
 
-function removeError(index){
+export const removeError = (index) => {
     inpts[index].style.border = ''
     spans[index].style.display = 'none'
 }
 
 inpts[0].oninput = function nomeValidate(){
-    if(inpts[0].value.length < 6){
+    if(inpts[0].value.length < 10){
         setError(0)
     } else {
         removeError(0)
