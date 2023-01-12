@@ -12,7 +12,7 @@ export const removeError = (index) => {
 }
 
 inpts[0].oninput = function nomeValidate(){
-    if(inpts[0].value.length < 10){
+    if(inpts[0].value.length < 5){
         setError(0)
     } else {
         removeError(0)

@@ -13,12 +13,27 @@ import { removeError } from "./validandoCampos.js";
 btnConfirm.addEventListener('click', (e) => {
     e.preventDefault();
 
-    for(let i = 0; i < inpts.length; i++){
-        if(inpts[i].value === ""){
+    let newArray = Array.from(inpts)
+    const todosPreenchidos = newArray.every((inpt) => inpt.value !== "");
+
+    if(todosPreenchidos === false){
+        alert("Por favor digite todos os campos")
+    }
+    
+    if(todosPreenchidos === false){
+        for(let i = 0; i < newArray.length; i++){
             setError(i)
-        } else{
-            formDisable.style.display = 'none'
-            formActive.style.display = 'block'
+            newArray[i]. value = ""
+
+            campoCartao[0].innerHTML = "0000 0000 0000 0000"
+            campoCartao[1].innerHTML = "JANE APPLESEED"
+            campoCartao[2].innerHTML = "00/00"
+            campoCartao[3].innerHTML = "000"
+        }
+    } else{
+        formDisable.style.display = 'none'
+        formActive.style.display = 'block'
+        for(let i = 0; i < newArray.length; i++){
             removeError(i);
         }
     }
