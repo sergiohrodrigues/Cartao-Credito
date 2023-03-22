@@ -15,10 +15,6 @@ btnConfirm.addEventListener('click', (e) => {
 
     let newArray = Array.from(inpts)
     const todosPreenchidos = newArray.every((inpt) => inpt.value !== "");
-
-    if(todosPreenchidos === false){
-        alert("Por favor digite todos os campos")
-    }
     
     if(todosPreenchidos === false){
         for(let i = 0; i < newArray.length; i++){
