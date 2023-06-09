@@ -2,7 +2,7 @@ const nome = document.querySelector('#name')
 const nomeCartao = document.querySelector('#nome-cartao')
 
 nome.addEventListener('change', (e) => {
-    if(nome.value.length > 5){
+    if(nome.value.length >= 5){
         nomeCartao.textContent = e.target.value;
     }
 })
@@ -18,11 +18,22 @@ number.addEventListener('change', (e) => {
 
 const mm = document.querySelector('#mm')
 const yy = document.querySelector('#yy')
-const vality = document.querySelector('#vality')
+const valityMes = document.querySelector('#vality-mes')
+const valityAno = document.querySelector('#vality-ano')
+
+mm.addEventListener('change', (e) => {
+    if(mm.value.length == 2){
+        valityMes.textContent = mm.value
+    } else {
+        return null
+    }
+})
 
 yy.addEventListener('change', (e) => {
-    if(mm.value.length == 2 && yy.value.length){
-        vality.textContent = mm.value + '/' + e.target.value
+    if(yy.value.length == 2){
+        valityAno.textContent = yy.value
+    } else {
+        return null
     }
 })
 

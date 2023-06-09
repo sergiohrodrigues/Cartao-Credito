@@ -3,24 +3,37 @@
 .all{
     display: flex;
     flex-direction: column;
-    min-width: 320px;
+    align-items: center;
+    height: 100vh;
+    gap: 5rem;
+}
+
+.header{
+    background-image: url('../img/fundo.png');
+    background-size:cover;
+    width: 100%;
     position: relative;
+    height: 30%;
+}
+
+.cards{
+    position: absolute;
+    right: 5%;
 }
 
 .header__imagem{
     width: 100vw;
-    height: 200px;
+    height: 200px
 }
 
 .cards__front{
     background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
     border-radius: 10px;
-    width: 250px;
+    max-width: 250px;
+    margin: 7rem 0 0 -1rem;
     height: 150px;
-    position: absolute;
-    top: 125px;
-    right: 57px;
-    z-index: 2;
+    position: relative;
+    z-index: 10;
 }
 
 .cards__front-circle{
@@ -47,7 +60,6 @@
 
 .cards__front-number{
     font-family: var(--font);
-    font-size: 18px;
     color: white;
     width: 100%;
     background: transparent;
@@ -58,23 +70,31 @@
 }
 
 .cards__front-nome-data{
+    width: 100%;
     font-size: 12px;
     color: white;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0 0.5rem;
+}
+
+.card-name{
+    width: 80%;
+}
+
+.div-mes-ano{
+    width: 20%;
 }
 
 .cards__verso{
     background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
     border-radius: 10px;
-    width: 250px;
+    max-width: 250px;
     height: 150px;
-    position: absolute;
-    z-index: 1;
-    top: 31px;
-    right: 17px;
+    margin-top: -15.5rem;
+    position: relative;
+    z-index: 0;
 }
 
 .cards__verso-black{
@@ -101,20 +121,26 @@
     margin: 0px 0px 12px 75px;
 }
 
-@media screen and (min-width: 1270px){
+@media screen and (min-width: 1024px){
     .all{
         flex-direction: row;
+    }
+    .header{
+        width: 35%;
+        height: 100vh;
+    }
+    .cards{
+        top: 30%;
+        right: -8rem;
     }
     .header__imagem{
         height: 100vh;
         width: 500px;
     }
     .cards__front{
-        width: 100%;
-        max-width: 400px;
+        max-width: 440px;
         height: 220px;
-        top: 115px;
-        left: 16%;
+        margin-top: -5rem;
     }
     .cards__front-number{
         font-size: 25px;
@@ -125,11 +151,9 @@
         margin-top: 20px;
     }
     .cards__verso{
-        width: 100%;
         max-width: 440px;
         height: 220px;
-        top: 384px;
-        left: 19%;
+        margin-top: 2rem;
     }
     .cards__verso-black{
         height: 50px;

@@ -4,7 +4,7 @@
     text-align: left;
     width: 87%;
     max-width: 400px;
-    margin: 80px auto 0px auto;
+    margin: 0 auto 0 auto;
 }
 
 .form__label{
@@ -38,6 +38,10 @@ input{
     display: flex;
 }
 
+input{
+    outline: none;
+}
+
 .input-date{
     padding: 10px;
     max-width: 50%;
@@ -65,30 +69,27 @@ input{
     color: red;
 }
 
-@media screen and (min-width: 1270px){
+@media screen and (min-width: 1024px){
     #form{
         width: 30%;
         max-width: 900px;
-        margin: 170px 174px 0 auto;
+        margin: 0 auto 0 auto;
     }
     input{
         padding: 15px;
     }
+    input:hover{
+        cursor: pointer;
+        border: 1px solid purple;
+    }
     .input-date{
         padding: 15px;
-    }
-    .input-cod:hover{
-        cursor: pointer;
-        border: 1px solid purple;
-    }
-    .input-name-number:hover{
-        cursor: pointer;
-        border: 1px solid purple;
     }
     .input-button{
         cursor: pointer;
     }
     .input-button:hover{
+        cursor: pointer;
         background: white;
         color: var(--color-roxo);
         border: 2px solid var(--color-roxo);

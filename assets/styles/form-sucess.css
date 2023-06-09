@@ -2,15 +2,14 @@
 
 .form-sucess{
     display: none;
-    margin-top: 100px;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .form-sucess-titulo{
     font-size: 28px;
     color: var(--color-roxo);
     letter-spacing: 3.42px;
-    margin: 20px 0;
 }
 
 .form-sucess-parag{
@@ -32,7 +31,7 @@
     .form-sucess{
         width: 30%;
         max-width: 900px;
-        margin: 195px 174px 0 auto;
+        margin: 0 auto;
     }
     .input-continue{
         margin: 45px auto 0 auto;

@@ -12,5 +12,5 @@
 body{
     background-color: #FFFFFF;
     font-family: var(--font);
-    height: 100vh;
+    min-width: 282px;
 }
