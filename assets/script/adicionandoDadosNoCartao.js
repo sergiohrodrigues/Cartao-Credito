@@ -1,7 +1,7 @@
 const nome = document.querySelector('#name') 
 const nomeCartao = document.querySelector('#nome-cartao')
 
-nome.addEventListener('change', (e) => {
+nome.addEventListener('input', (e) => {
     if(nome.value.length >= 5){
         nomeCartao.textContent = e.target.value;
     }
@@ -10,7 +10,7 @@ nome.addEventListener('change', (e) => {
 const number = document.querySelector('#number')
 let numberCard = document.querySelector('.cards__front-number')
 
-number.addEventListener('change', (e) => {
+number.addEventListener('input', (e) => {
     if(number.value.length === 16){
         numberCard.textContent = e.target.value;
     }
@@ -21,7 +21,7 @@ const yy = document.querySelector('#yy')
 const valityMes = document.querySelector('#vality-mes')
 const valityAno = document.querySelector('#vality-ano')
 
-mm.addEventListener('change', (e) => {
+mm.addEventListener('input', (e) => {
     if(mm.value.length == 2){
         valityMes.textContent = mm.value
     } else {
@@ -29,7 +29,7 @@ mm.addEventListener('change', (e) => {
     }
 })
 
-yy.addEventListener('change', (e) => {
+yy.addEventListener('input', (e) => {
     if(yy.value.length == 2){
         valityAno.textContent = yy.value
     } else {
@@ -40,7 +40,7 @@ yy.addEventListener('change', (e) => {
 const cod = document.querySelector('#cod')
 const codCartao = document.querySelector('#cod-cartao')
 
-cod.addEventListener('change', (e) => {
+cod.addEventListener('input', (e) => {
     if(cod.value.length === 3){
         codCartao.textContent = e.target.value
     }
